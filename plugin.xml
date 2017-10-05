@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"  
     id="com.apptracker.phonegap.android"  
     version="0.0.1">  
-    <name>ApptrackerPlugin</name>  
+    <name>ApptrackerPluginAndroid</name>  
     <description>ApptrackerPlugin</description>  
     <author>www.leadbolt.com</author>  
     <license>Apache 2.0 License</license>  
@@ -13,7 +13,8 @@
         <clobbers target="AppTracker" />  
     </js-module>  
     <platform name="android">
-        <source-file src="src/android/AppTrackerPhonegap.jar" target-dir="libs" />
+        <source-file src="src/android/AppTrackerPlugin.java" target-dir="src/com/apptracker/android/phonegap"/>
+        <!--  <source-file src="src/android/AppTrackerPhonegap.jar" target-dir="libs" />  -->
         <source-file src="src/android/AppTracker.jar" target-dir="libs" />
         <config-file target="res/xml/config.xml" parent="/*">  
             <feature name="AppTracker">  
